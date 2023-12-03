@@ -16,7 +16,11 @@ window.addEventListener('load', async function () {
     gameframe = document.querySelector('#game-frame')
 
     this.document.querySelector('#play').innerText = `play ${params.get('game')}`
-    this.document.querySelector('#desc p').innerText = game.desc
+    if (game.desc) {
+        this.document.querySelector('#desc p').innerText = game.desc
+    } else {
+        this.document.querySelector('#desc p').remove()
+    }
     gameframe.src = game.url || `assets/games/${params.get('game').replaceAll(' ', '')}/index.html`
 
     fullscreenBtn = this.document.querySelector('#fullscreen')
