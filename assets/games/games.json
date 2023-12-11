@@ -30,5 +30,11 @@
         "card-desc": "a game about mining dogecoins. to the moon!",
         "type": "flash games",
         "hidden": true
+    },
+    "slope": {
+        "card-desc": "play as a ball and roll down an endless slope!",
+        "type": "arcade",
+        "credit": "Y8 games",
+        "website": "https://www.y8.com/games/slope"
     }
 }
