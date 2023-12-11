@@ -56,14 +56,18 @@ async function loadfromjson(json) {
     let games = JSON.parse(json);
     for (g in games) {
         let game = games[g]
-        
-        let img = game.image 
-        if (!game.image) {
-            img = `assets/games/${g.replaceAll(' ', '')}/icon.png`
+        if (game.hidden) {
+            continue
+        } 
+        else {
+            let img = game.image 
+            if (!game.image) {
+                img = `assets/games/${g.replaceAll(' ', '')}/icon.png`
+            }
+            
+            let html = cardGameHtml(g, game['card-desc'], img, game.type)
+            gamesgrid.innerHTML += html
         }
-        
-        let html = cardGameHtml(g, game['card-desc'], img, game.type)
-        gamesgrid.innerHTML += html
     }
 }
 

@@ -2,26 +2,33 @@
     "youtube unblocked": {
         "card-desc": "watch any video you want!",
         "type": "other",
-        "note":"CURRENTLY BROKEN RIGHT NOW. \nit might take a while for the proxy to load. please wait.",
+        "note":"it might take a while for the proxy to load. please wait.",
         "desc":"watch any youtube video you want! unblocked using a custom-hosted proxy.",
-        "url":"https://youtube.com"
+        "url":"https://youtube.com",
+        "hidden":true
     },
     "cookie clicker": {
         "card-desc": "try not to get addicted in this incremental/idle game about cookies.",
         "type": "other",
-        "note":"NOTE: Make sure to frequently backup your save data just in case. Your save data could also be transfered from the original cookie clicker website.",
-        "desc":"All credit goes to Orteil for cookie clicker. We do not intend to copy or claim cookie clicker as our own. We are just rehosting the game so more people could play!\nPlay cookie clicker on the original website: https://orteil.dashnet.org/cookieclicker"
+        "note":"NOTE: Make sure to frequently backup your save data just in case. Your save data could also be imported from the original cookie clicker website.",
+        "credit":"Orteil",
+        "website":"https://orteil.dashnet.org/cookieclicker"
     },
     "2048": {
         "card-desc": "try to get to the largest number possible!",
-        "type": "arcade"
+        "type": "arcade",
+        "credit": "Gabriele Cirulli",
+        "website": "https://play2048.co/"
     },
     "mineblocks": {
         "card-desc": "minecraft... but 2d... and not terraria",
-        "type": "flash games"
+        "type": "flash games",
+        "credit": "zanzlanz",
+        "website": "https://zanzlanz.com/mineblocks"
     },
     "doge miner 2": {
         "card-desc": "a game about mining dogecoins. to the moon!",
-        "type": "flash games"
+        "type": "flash games",
+        "hidden": true
     }
 }

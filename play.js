@@ -18,8 +18,13 @@ window.addEventListener('load', async function () {
     this.document.querySelector('#play').innerText = `play ${params.get('game')}`
     if (game.desc) {
         this.document.querySelector('#desc p').innerText = game.desc
+    } else if (game.credit) {
+        this.document.querySelector('#desc p').innerText = `All credit goes to ${game.credit} for ${params.get('game')}. We do not intend to copy or claim ${params.get('game')} as our own. We are just rehosting the game so more people could play!`
+        if (game.website) {
+            this.document.querySelector('#desc p').innerText += ` You can play ${params.get('game')} on the original website: ${game.website}`
+        }
     } else {
-        this.document.querySelector('#desc p').remove()
+        this.document.querySelector('#desc').remove();
     }
     gameframe.src = game.url || `assets/games/${params.get('game').replaceAll(' ', '')}/index.html`
 
