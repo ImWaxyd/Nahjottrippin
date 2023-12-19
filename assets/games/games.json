@@ -37,10 +37,17 @@
         "credit": "Y8 games",
         "website": "https://www.y8.com/games/slope"
     },
+    "run 3": {
+        "card-desc": "run and jump through 100s of levels in this epic platformer!",
+        "type": "flash games",
+        "credit": "player_03",
+        "website": "https://player03.com/run/3/beta/"
+    },
     "1v1.lol": {
         "card-desc": "fortnite, but not fortnite.",
         "type": "action",
         "credit": "Y8 games",
-        "website": "https://www.y8.com/games/slope"
+        "website": "https://www.y8.com/games/slope",
+        "hidden":true
     }
 }
