@@ -1,5 +1,6 @@
 window.addEventListener('load', async function () {
     let params = (new URL(document.location)).searchParams;
+    this.document.querySelector('#help').href = `reportissue.html/?type=gamebroken?game=${params.get('game')}`
     let data = await fetch("assets/games/games.json")
         .then((res) => {
         return res.json();
@@ -26,12 +27,14 @@ window.addEventListener('load', async function () {
     } else {
         this.document.querySelector('#desc').remove();
     }
-    gameframe.src = game.url || `assets/games/${params.get('game').replaceAll(' ', '')}/index.html`
+    gameText = params.get('game').replaceAll(' ', '')
+    gameframe.src = game.url || `assets/games/${gameText}/index.html`
 
     fullscreenBtn = this.document.querySelector('#fullscreen')
     document.body.addEventListener('click', function(e) {
         if (fullscreenBtn.matches(':hover')) {
             gameframe.requestFullscreen();
+            gameframe.contentWindow.focus();
         }
     }, true); 
 
