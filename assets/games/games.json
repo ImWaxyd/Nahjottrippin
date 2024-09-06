@@ -5,7 +5,7 @@
         "note":"it might take a while for the proxy to load. please wait.",
         "desc":"watch any youtube video you want! unblocked using a custom-hosted proxy.",
         "url":"https://youtube.com",
-        "hidden":true
+        "hidden":false
     },
     "cookie clicker": {
         "card-desc": "try not to get addicted in this incremental/idle game about cookies.",
@@ -29,7 +29,7 @@
     "doge miner 2": {
         "card-desc": "a game about mining dogecoins. to the moon!",
         "type": "flash games",
-        "hidden": true
+        "hidden":false
     },
     "slope": {
         "card-desc": "play as a ball and roll down an endless slope!",
@@ -48,6 +48,6 @@
         "type": "action",
         "credit": "Y8 games",
         "website": "https://www.y8.com/games/slope",
-        "hidden":true
+        "hidden":false
     }
 }
